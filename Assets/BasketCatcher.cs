@@ -7,7 +7,8 @@ public class BasketCatcher : MonoBehaviour
         if (other.CompareTag("Apple"))
         {
             Destroy(other.gameObject);
-            // (optional) add score here later
+
+            ScoreCounter.score += 100;
         }
     }
 }
